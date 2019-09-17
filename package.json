@@ -2,13 +2,11 @@
     "name": "node-express-typescript",
     "version": "1.0.0",
     "description": "Nodejs ExpressJs Typescript run on Heroku",
-    "main": "index.js",
+    "main": "dist/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "ts-node-dev --respawn --transpileOnly index.ts",
         "lint": "tslint --project .",
-        "build-ts": "tsc",
-        "postinstall": "npm run build-ts",
         "start": "ts-node index.ts"
     },
     "repository": {
