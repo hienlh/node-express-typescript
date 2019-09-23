@@ -1,11 +1,11 @@
-import * as dotenv from 'dotenv';
+import { config } from 'dotenv';
 import * as bodyParser from 'body-parser';
 import * as express from 'express';
 import {Request, Response} from 'express';
 import * as logger from 'morgan';
 
 // Config to use environment variable
-dotenv.config();
+config();
 
 // Create port
 const port = process.env.PORT || 8000;
